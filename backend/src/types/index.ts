@@ -4,6 +4,15 @@
  */
 
 /**
+ * API Error response structure
+ */
+export interface APIError {
+	error: string;
+	message: string;
+	details?: Record<string, unknown>;
+}
+
+/**
  * Available mood types for focus sessions
  */
 export type Mood = 
