@@ -1,0 +1,59 @@
+# Environment Variables to Add to Vercel
+# Copy each KEY and VALUE pair below into Vercel
+
+# ==========================================
+# FRONTEND VARIABLES (Build-time - VITE_ prefix)
+# ==========================================
+
+KEY: VITE_AUTH0_DOMAIN
+VALUE: [Your Auth0 domain, e.g., dev-abc123.us.auth0.com]
+
+KEY: VITE_AUTH0_CLIENT_ID
+VALUE: [Your Auth0 Client ID]
+
+KEY: VITE_AUTH0_AUDIENCE
+VALUE: https://api.pulseplay.ai
+
+KEY: VITE_API_URL
+VALUE: /api
+
+# ==========================================
+# BACKEND VARIABLES (Runtime)
+# ==========================================
+
+KEY: MONGODB_URI
+VALUE: [Your MongoDB connection string]
+
+KEY: AUTH0_DOMAIN
+VALUE: [Your Auth0 domain - same as VITE_AUTH0_DOMAIN]
+
+KEY: AUTH0_CLIENT_ID
+VALUE: [Your Auth0 Client ID - same as VITE_AUTH0_CLIENT_ID]
+
+KEY: AUTH0_CLIENT_SECRET
+VALUE: [Your Auth0 Client Secret - found in Auth0 dashboard]
+
+KEY: AUTH0_AUDIENCE
+VALUE: https://api.pulseplay.ai
+
+KEY: AUTH0_ISSUER_BASE_URL
+VALUE: https://[Your Auth0 domain]
+
+KEY: GEMINI_API_KEY
+VALUE: [Your Gemini API key from Google AI Studio]
+
+KEY: NODE_ENV
+VALUE: production
+
+KEY: FRONTEND_URL
+VALUE: https://pulseplay-9dfet3xr4-riqs-projects-b33d2584.vercel.app
+
+# ==========================================
+# INSTRUCTIONS:
+# ==========================================
+# 1. In the "Key" field, enter the KEY name (without "KEY:")
+# 2. In the "Value" field, enter your actual VALUE (replace [...])
+# 3. Keep "All Environments" selected
+# 4. Click "Add Another" to add the next variable
+# 5. After adding ALL variables, click "Save"
+# 6. Then redeploy your app

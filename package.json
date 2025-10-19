@@ -7,7 +7,7 @@
     "dev": "vite",
     "dev:backend": "cd backend && npm run dev",
     "dev:all": "npm run dev & npm run dev:backend",
-    "build": "npx vite build",
+    "build": "vite build",
     "build:backend": "cd backend && npm run build",
     "lint": "npx @biomejs/biome check .",
     "lint:fix": "npx @biomejs/biome check --write .",
